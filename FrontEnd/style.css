@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('Ares.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:blue;
+    text-align: center;
+        /* transform-origin: 50% 65%;
+        transition: transform 5s, filter 3s ease-in-out;
+        filter: brightness(150%);
+        filter: brightness(100%);
+        transform: scale(3); */
+      
+}
+.animated-text {
+    animation: fadeIn 3s ease-in-out;
+    font-size: 3rem;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Characters Section */
+.characters-section {
+    padding: 3rem;
+    text-align: center;
+}
+
+.character-card {
+    display: inline-block;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.character-card:hover {
+    transform: scale(1.1);
+}
+
+.character-details {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Carousel Section */
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    background-color: #f39c12;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.carousel-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+li,h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+a{
+    color: red;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+}
